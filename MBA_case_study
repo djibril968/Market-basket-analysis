@@ -8,7 +8,7 @@ SELECT p1.prod_ID, p1.prod_name, p2.prod_id, p2.prod_name
 FROM Transaction_Data p1
 JOIN Transaction_Data p2
 ON p1.txn_id = p2.txn_ID
-WHERE p1.prod_name < p2.prod_name;
+WHERE p1.prod_name < p2.prod_name; 
 
 -----we drill further to find out the number of times the identified products were bought together
 WITH mba_cte ---we start with our market basket analysis, which gives an insight into what products customers purchase together
